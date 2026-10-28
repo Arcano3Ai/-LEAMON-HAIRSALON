@@ -1,0 +1,243 @@
+.contact-section {
+  background-color: var(--bg-cream);
+  position: relative;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.contact-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: clamp(2rem, 4vw, 3rem);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Column 1: Assistant Form */
+.assistant-header {
+  margin-bottom: 2rem;
+}
+
+.assistant-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.assistant-title {
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  margin-bottom: 0.5rem;
+  color: var(--text-charcoal);
+}
+
+.assistant-description {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-body);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-charcoal);
+  text-transform: uppercase;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 0.9rem 1.15rem;
+  background-color: var(--bg-ivory);
+  border: 1px solid var(--border-subtle);
+  border-radius: 2px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-charcoal);
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: var(--gold-primary);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.15);
+}
+
+.booking-submit-btn {
+  margin-top: 0.75rem;
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  font-size: 0.84rem;
+  letter-spacing: 0.12em;
+}
+
+.booking-form-assurance {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.assurance-icon {
+  color: var(--gold-dark);
+  flex-shrink: 0;
+}
+
+/* Column 2: Information Card */
+.info-card-title {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: var(--text-charcoal);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.info-blocks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.15rem;
+}
+
+.info-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-ivory);
+  border: 1px solid var(--gold-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-dark);
+  flex-shrink: 0;
+}
+
+.info-block-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.info-value {
+  font-size: 1.05rem;
+  color: var(--text-charcoal);
+  font-weight: 600;
+}
+
+.info-value.text-normal {
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.info-link:hover {
+  color: var(--gold-dark);
+}
+
+.info-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+/* Map Placeholder */
+.salon-map-container {
+  margin-top: auto;
+  border: 1px solid var(--gold-border-subtle);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.map-placeholder-box {
+  background: radial-gradient(circle at 50% 50%, rgba(223, 192, 125, 0.15) 0%, transparent 80%),
+              var(--bg-ivory);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+}
+
+.map-pin-icon {
+  color: var(--gold-primary);
+  margin-bottom: 0.25rem;
+}
+
+.map-mty-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-charcoal);
+}
+
+.map-mty-subtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.map-action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  transition: gap var(--transition-fast);
+}
+
+.map-action-link:hover {
+  gap: 0.65rem;
+  color: var(--text-charcoal);
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,211 @@
+.services-section {
+  background-color: var(--bg-cream);
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-header {
+  max-width: 680px;
+  margin: 0 auto 3rem;
+}
+
+.section-title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: var(--text-body);
+  font-size: 1.05rem;
+}
+
+/* Category Filter Tabs */
+.services-filter-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-tab-btn {
+  padding: 0.6rem 1.35rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-body);
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9999px;
+  transition: all var(--transition-fast);
+}
+
+.filter-tab-btn:hover {
+  background: #FFFFFF;
+  border-color: var(--gold-primary);
+  color: var(--text-charcoal);
+  transform: translateY(-1px);
+}
+
+.filter-tab-btn.active {
+  background: var(--text-charcoal);
+  color: var(--bg-ivory);
+  border-color: var(--text-charcoal);
+  box-shadow: 0 4px 14px rgba(31, 29, 26, 0.15);
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-medium);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-border);
+  box-shadow: 0 16px 36px -10px rgba(31, 29, 26, 0.1);
+}
+
+.service-image-container {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: var(--bg-beige);
+}
+
+.service-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover .service-card-img {
+  transform: scale(1.05);
+}
+
+.service-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(31, 29, 26, 0.3) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.service-price-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(250, 247, 242, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 0.3rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-charcoal);
+  border: 1px solid var(--gold-border-subtle);
+  border-radius: 2px;
+}
+
+.service-card-body {
+  padding: 1.75rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.service-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.service-duration {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.service-featured-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--gold-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.68rem;
+}
+
+.service-card-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-charcoal);
+}
+
+.service-card-desc {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-body);
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.service-card-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.service-book-btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.76rem;
+}
+
+.service-book-btn:hover {
+  background: var(--gold-primary);
+  border-color: var(--gold-primary);
+  color: #1A1815;
+}
+
+/* Disclaimer banner */
+.services-disclaimer-card {
+  margin-top: 3.5rem;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--gold-border-subtle);
+  border-radius: 4px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.disclaimer-text {
+  font-size: 0.9rem;
+  color: var(--text-body);
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
